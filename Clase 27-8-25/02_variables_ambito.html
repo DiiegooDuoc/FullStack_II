@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Variables ambito</title>
+  <script>
+    var globalVar = 100;
+    function uno(){
+      var local_uno = 1;
+      alert('Global1: ' + globalVar + '- Local UNO: ' + local_uno);
+    }
+    function dos(){
+      var local_dos = 2;
+      alert('Global1: ' + globalVar + '- Local DOS: ' + local_dos);
+    }
+  </script>
+</head>
+<body>
+  <h1>Segundo programa de hoy</h1>
+  <p>Ejemplo muestra de variables ambito con alerta</p>
+  <button onclick="uno();">Probar</button>
+</body>
+</html>
